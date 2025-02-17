@@ -1,0 +1,222 @@
+/* Adicionando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dela+Gothic+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dela+Gothic+One&family=Denk+One&display=swap');
+
+:root{
+    --primaria: #00421D;
+    --secundaria: #027333;
+    --terciaria: #333333;
+    --texto:#DDD5D5;
+    --fundo:#00000043;
+}
+
+
+/* resetando configurações */
+*{
+    font-family: "Denk One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/* mudando fundo */
+body{
+    width: 100vw;
+    background-image: url(Assets/fundo.png);
+    background-size: contain;
+    overflow-x: hidden;
+}
+/* criando o cabeçalho interativo */
+header{
+    right: 0;
+    max-width: 70%;
+    top: -180px;
+    position: fixed;
+    z-index: 1;
+}
+header img{
+    width: 700px;
+    height: 450px;
+    right: 0;
+}
+.tentaculo{
+    height: 400px;
+    position: absolute;
+    right: -515px;
+    transform: rotate(-35deg);
+    transition: 1s;
+}
+.tentaculo:hover{
+    transform: translateX(-400px) translateY(60px);
+    transition: 1s;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+header ul li{
+    position: absolute;
+}
+header ul li a{
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4em;
+    color: var(--texto);
+}
+header ul li:nth-child(1){
+    right: 530px;
+    top: 275px;
+}
+header ul li:nth-child(2){
+    right: 380px;
+    top: 265px;
+}
+header ul li:nth-child(3){
+    right: 180px;
+    top: 205px;
+}
+
+/* Iniciando o Main e o section*/
+
+.texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto h1, h2{
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.361);
+}
+.texto .corlivro{
+    color: var(--primaria);
+}
+.texto .autor{
+    color: var(--secundaria);
+}
+.texto p{
+    background-color: var(--fundo);
+    border-radius: 15px;
+    font-size: 0.9em;
+    padding: 15px;
+    color: var(--texto);
+    margin-bottom: 10px;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 30px 60px 30px 10px;
+}
+.imagem{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+}
+.btn{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    color: var(--texto);
+    background-color: var(--secundaria);
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+}
+.btn button:hover{
+    color: lightgray;
+    background-color: #025225;
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container h3{
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--secundaria);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.361);
+}
+.content img{
+    width: 20%!important;
+    border-radius: 10px;
+}
+.content{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+/* comentarios */
+.comentsarea{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.comentarios{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.conta{
+    width: 20%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comentarios textarea{
+    width: 80%;
+    height: 80%;
+}
+.comentarios input{
+    padding: 5px;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+}
+.comentarios input[type=image]{
+    width: 100px;
+    height: 150px;
+}
+
+/* footer */
+footer p{
+    height: 30px;
+    font-size: 0.9em;
+    color: var(--texto);
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--terciaria);
+    padding-top: 10px;
+}
