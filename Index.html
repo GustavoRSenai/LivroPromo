@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
     <title>www.PromoLivros.com</title>
 </head>
@@ -24,14 +25,24 @@
         <img class="imagem" src="Assets/Livro cthulhu.jpg" alt="Livro cthulhu">
         <div class="texto">
             <h1 class="corlivro">Sobre o livro</h1>
-            <p>"O Chamado de Cthulhu" é um conto de H.P. Lovecraft que narra a investigação de Francis Wayland Thurston sobre a morte de seu tio-avô e a conexão com um culto misterioso. O tio, o Professor Angell, estava estudando antigos cultos e uma entidade chamada Cthulhu, que, segundo as pesquisas, seria um ser colossal e monstruoso adormecido no fundo do oceano. O relato revela uma série de acontecimentos estranhos e relatos de indivíduos que tiveram contato com a criatura ou com o culto, sugerindo que Cthulhu é uma força cósmica de grande poder, capaz de influenciar e até enlouquecer aqueles que a encontram.
-                <br>
-                <br>
-            A história explora o tema do cosmicismo, onde a humanidade é retratada como insignificante diante das forças do universo, além de envolver o mistério e o terror psicológico. À medida que Thurston reúne fragmentos de informações, ele chega à conclusão de que Cthulhu é uma entidade tão incompreensível e aterrorizante que a simples menção de seu nome é suficiente para provocar loucura e desespero. O conto deixa uma sensação de impotência, onde o desconhecido e o irracional dominam o destino humano.</p>
+            <p class="item text1 ativo">
+                O primeiro capítulo de O Segredo de Cthulhu, escrito por Ramsay Campbell, apresenta o protagonista, que está investigando um misterioso evento relacionado ao culto de Cthulhu. O personagem principal se vê envolvido em uma trama de mistério, onde começa a perceber conexões estranhas e perturbadoras com o sobrenatural. Ele explora as primeiras pistas e se depara com uma série de revelações que começam a apontar para algo muito maior do que ele imaginava. O capítulo prepara o cenário para os mistérios e horrores que estão por vir, ao mesmo tempo em que introduz uma atmosfera tensa e de crescente ansiedade, típicas das histórias de Lovecraft.
+                
+                O clima de suspense e o desenvolvimento do mistério são essenciais neste primeiro capítulo, instigando o leitor a continuar a busca por respostas sobre o culto e a entidade Cthulhu.
+            </p>
+            <p class="item text2">
+                No segundo capítulo de O Segredo de Cthulhu, o protagonista continua sua investigação sobre o culto e começa a descobrir mais sobre a misteriosa entidade Cthulhu. Ele se aprofunda em antigas lendas e textos arcanos que mencionam a criatura, revelando um complexo pano de fundo mitológico. O capítulo foca nas primeiras experiências mais intensas do personagem com o sobrenatural, deixando-o cada vez mais inquieto e confuso. Ao investigar ainda mais, ele começa a perceber que há uma conexão pessoal com os eventos que estão ocorrendo, o que o leva a questionar sua própria sanidade. O clima de tensão aumenta, e ele sente uma presença ameaçadora, enquanto novas pistas indicam que o culto está mais próximo e mais poderoso do que ele imaginava.
+             
+                Este capítulo continua a desenvolver o mistério em torno de Cthulhu, criando um cenário de terror psicológico, onde o protagonista está cada vez mais imerso em uma teia de segredos e perigos iminentes.</p>
+            <p class="item text3">
+                No terceiro capítulo de O Segredo de Cthulhu, o protagonista começa a sentir o peso das suas descobertas e a pressão de estar envolvido em algo muito maior do que imaginava. Ele se aproxima de uma série de documentos e relatos que detalham a história do culto de Cthulhu, e encontra referências a eventos e locais específicos que parecem conectá-lo diretamente ao mistério. Durante sua busca, ele encontra uma pessoa-chave que possui informações cruciais sobre o culto, mas essa pessoa parece estar com medo e relutante em compartilhar mais detalhes.
+                
+                Além disso, o protagonista começa a experimentar pesadelos perturbadores e visões estranhas que o conectam ainda mais ao plano sobrenatural de Cthulhu, gerando um crescente desconforto psicológico. Ele passa a duvidar da sua própria percepção da realidade, questionando se os fenômenos que está vivenciando são apenas fruto da sua mente ou algo genuinamente sobrenatural. O capítulo aumenta o suspense e a sensação de que o protagonista está se aproximando perigosamente da verdade, mas também sendo consumido pela loucura e pelo terror.
+            </p>
             <div class="btn">
-                <button>Cap 1</button>
-                <button>Cap 2</button>
-                <button>Cap 3</button>
+                <button id="b1">Cap 1</button>
+                <button id="b2">Cap 2</button>
+                <button id="b3">Cap 3</button>
             </div>
         </div>
     </main>
@@ -49,17 +60,23 @@
         <div class="container">
             <h3 class="livrostxt">Obras do Autor</h2>
             <div class="content">
-                <img src="Assets/Dagan.jpg" alt="livro dagan">
-                <img src="Assets/Livro cthulhu.jpg" alt="livro cthulhu">
-                <img src="Assets/montanhas da loucura.jpg" alt="livro montanhas da loucura">
-                <img src="Assets/TES.jpg" alt="Livro TES">
+                <button id="ante"><</button>
+                <div class="livros livroativo">
+                    <a target="_blank" href="https://www.amazon.com.br/Dagon-H-P-Lovecraft/dp/857321466X"><img src="Assets/Dagan.jpg" alt="livro dagan"></a>
+                    <a target="_blank" href="https://www.amazon.com.br/Chamado-Cthulhu-H-P-Lovecraft/dp/6555981083"><img src="Assets/Livro cthulhu.jpg" alt="livro cthulhu"></a>
+                </div>
+                <div class="livros">
+                    <a target="_blank"  href="https://www.amazon.com.br/Nas-montanhas-loucura-outros-contos/dp/655552636X/ref=asc_df_655552636X/?tag=googleshopp00-20&linkCode=df0&hvadid=709857900435&hvpos=&hvnetw=g&hvrand=13530423996181184983&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9196892&hvtargid=pla-1597563458854&psc=1&mcid=9be66a149e4f3784a879f49bbcca68ca&gad_source=1"><img src="Assets/montanhas da loucura.jpg" alt="livro montanhas da loucura"></a>
+                    <a target="_blank" href="https://www.amazon.com.br/H-P-Lovecraft-Early-Stories/dp/1635297486"><img src="Assets/TES.jpg" alt="Livro TES"></a>
+                </div>
+                <button id="prox">></button>
             </div>
         </div>
     </section>
     <section class="comentsarea" id="comentshead">
         <div class="comentarios">
             <div class="conta">
-                <input type="image">
+                <img src="Assets/usuario.png" alt="adicione foto de usuário">
                 <input type="text" placeholder="Digite seu nome">
             </div>
             <textarea name="coments" id="coments" placeholder=" Digite aqui seu comentário"></textarea>
@@ -67,6 +84,7 @@
     </section>
     <footer>
          <p>&copy; Segue nois no GitHub</p>
-        <p>(Obrigado Raul e nadja, agora sou sabido) </p>   </footer>
+        <p>(Obrigado Raul e Nadja, agora sou sabido) </p>   </footer>
 </body>
+<script src="script.js"></script>
 </html>

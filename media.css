@@ -1,0 +1,116 @@
+@media only screen and (max-width:450px){
+
+    /* header */
+    header img{
+        width: 300px;
+        height: 150px;
+
+    }
+    .tentaculo{
+        right: -295px;
+    }
+    .tentaculo:hover{
+        transform: translateX(-250px) translateY(60px);
+    }
+    header{
+        top: -100px;
+    }
+    header ul li a{
+        font-size: 0.6em;
+    }
+    header ul li:nth-child(1){
+        right: 230px;
+        top: 83px;
+    }
+    header ul li:nth-child(2){
+        right: 160px;
+        top: 80px;
+    }
+    header ul li:nth-child(3){
+        right: 70px;
+        top: 60px;
+    }
+
+    /* area principal da página */
+    body{
+        align-items: center;
+        justify-content: center;
+    }
+    .info{
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+    }
+    .texto{
+        width: 100%;
+    }
+    .texto p{
+        font-size: 1em;
+    }
+    .imagem{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    #autorhead .info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .texto h2{
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.783);
+    }
+    .content img{
+        max-height: 150px!important;
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+    #prox, #ante{
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(148, 148, 148, 0.6);
+        border: 1px solid rgba(148, 148, 148, 0.6);
+        color: #eee;
+        font-size: x-large;
+        font-family: monospace;
+        cursor: pointer;
+        z-index: 4;
+        border-radius: 50%;
+    }
+    #prox{
+        right: 5%;
+    }
+    #ante{
+        left: 5%;
+    }
+    /* area dos comentarios */
+    .comentarios{
+        width: 80%;
+    }
+    .comentarios img{
+        width: 50px;
+    }
+    .comentarios input{
+        width: 40px;
+        font-size: 0.2em;
+    }
+    .comentarios textarea{
+        width: 200px;
+        height: 100px;
+    }
+    .conta{
+        width:30%;
+        height: 60%;
+    }
+    .comentsarea{
+        height: 130px;
+    }
+
+    /* footer */
+    footer{
+        font-size: 0.5em;
+        height: 50px;
+    }
+}
