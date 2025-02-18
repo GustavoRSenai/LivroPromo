@@ -239,12 +239,7 @@ footer{
 .item{
     display: none;
 }
-.livros{
-    display: none;
-}
-.livros.livroativo{
-    display: block;
-}
+
 .item.ativo{
     display: block;
 }
@@ -272,5 +267,10 @@ footer{
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
+}
+.livros{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 

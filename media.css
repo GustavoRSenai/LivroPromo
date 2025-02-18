@@ -1,4 +1,11 @@
 @media only screen and (max-width:450px){
+    .livros{
+
+        display: none;
+    }
+    .livros.livroativo{
+        display: block;
+    }
 
     /* header */
     header img{
