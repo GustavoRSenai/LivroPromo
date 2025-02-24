@@ -137,6 +137,7 @@ header ul li:nth-child(3){
     border-radius: 10px;
     font-family: "Creepster", serif;
     font-size: 1.5em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.521);
 }
 .btn button:hover{
     color: lightgray;
