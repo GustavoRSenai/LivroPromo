@@ -70,9 +70,10 @@ header ul li a{
     color: var(--texto);
     text-shadow: 3px 3px 3px #00000053;
 }
-header ul li:nth-child(1){
-    right: 530px;
-    top: 275px;
+.livroh{
+    position: absolute;
+    right: -170px;
+    top: -260px;
 }
 header ul li:nth-child(2){
     right: 380px;
@@ -277,3 +278,71 @@ footer{
     justify-content: space-around;
 }
 
+.curvar {
+    margin: auto;
+    position: relative;
+    transform-origin: top center;
+    transform: rotate(40deg);
+    height: 100px;
+    width: 100px;
+  }
+  
+  .curvar div {
+    display: inline-block;
+    font-size: 1.5em;
+    height: 150px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .curva {
+    margin: auto;
+    position: relative;
+    transform-origin: top center;
+    transform: rotate(40deg);
+    height: 100px;
+    width: 100px;
+  }
+  
+  .curva div {
+    display: inline-block;
+    font-size: 1.5em;
+    height: 150px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .curv {
+    margin: auto;
+    position: relative;
+    transform-origin: top center;
+    transform: rotate(40deg);
+    height: 100px;
+    width: 100px;
+  }
+  
+  .curv div{
+    display: inline-block;
+    font-size:1.5em;
+    height: 150px;
+    width: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: top left;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+  }

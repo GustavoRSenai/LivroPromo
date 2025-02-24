@@ -73,3 +73,22 @@ prev.onclick = () =>{
 }
 
 
+
+
+let deg = 0;
+for (let i = 1; i <= 20; i++) {
+  let div = document.querySelector(".curvar div:nth-child(" + i + ")");
+  div.style.transform = 'rotate(' + deg + 'deg)';
+  deg = deg + -7;
+}
+
+for (let i = 1; i <= 20; i++) {
+    let div = document.querySelector(".curva div:nth-child(" + i + ")");
+    div.style.transform = 'rotate(' + deg + 'deg)';
+    deg = deg + -7;
+}
+for (let i = 1; i <= 20; i++) {
+    let div = document.querySelector(".curv div:nth-child(" + i + ")");
+    div.style.transform = 'rotate(' + deg + 'deg)';
+    deg = deg + -7;
+}
