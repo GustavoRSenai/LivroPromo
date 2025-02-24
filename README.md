@@ -49,7 +49,8 @@ Antes dos protótipos foi criado um manual de marca para sabermos as cores do si
 
 ## Página Web Finalizada.
 
-Caso você queira ver o site completo, visualize-o clicando AQUI.
+Caso você queira ver o site completo, visualize-o clicando <a href="https://github.com/GustavoRSenai/LivroPromo/blob/main/Video%20Projeto%20Final/video.zip">AQUI</a>.
+(descompacte o video para vê-lo).
 
 <br>
 <br>
