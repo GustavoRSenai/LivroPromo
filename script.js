@@ -31,7 +31,6 @@ b2.onclick = () =>{
     desativar.classList.remove('ativo')
     lista[1].classList.add('ativo')
     typeWriter(paragrafo2);
-
 }
 b3.onclick = () =>{
     let desativar = document.querySelector('.ativo')
@@ -74,20 +73,19 @@ prev.onclick = () =>{
 
 
 
-
 let deg = 0;
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 30; i++) {
   let div = document.querySelector(".curvar div:nth-child(" + i + ")");
   div.style.transform = 'rotate(' + deg + 'deg)';
   deg = deg + -7;
 }
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 30; i++) {
     let div = document.querySelector(".curva div:nth-child(" + i + ")");
     div.style.transform = 'rotate(' + deg + 'deg)';
     deg = deg + -7;
 }
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 0; i++) {
     let div = document.querySelector(".curv div:nth-child(" + i + ")");
     div.style.transform = 'rotate(' + deg + 'deg)';
     deg = deg + -7;
