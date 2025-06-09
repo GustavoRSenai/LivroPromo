@@ -75,6 +75,17 @@ header ul li a{
     right: -170px;
     top: -260px;
 }
+.autorh{
+    position: absolute;
+    right: -10px;
+    top: -70px;
+}
+
+.comentsh{
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
 header ul li:nth-child(2){
     right: 380px;
     top: 265px;
@@ -295,7 +306,7 @@ footer{
     position: absolute;
     left: 0;
     top: 0;
-    transform-origin: top left;
+    transform-origin: top center;
     text-align: center;
     display: flex;
     align-items: flex-end;
@@ -324,25 +335,23 @@ footer{
     align-items: flex-end;
   }
 
-  .curv {
+.curv {
     margin: auto;
     position: relative;
-    transform-origin: top center;
-    transform: rotate(40deg);
-    height: 100px;
-    width: 100px;
-  }
-  
-  .curv div{
-    display: inline-block;
-    font-size:1.5em;
+    transform-origin: bottom center;
     height: 150px;
-    width: 15px;
+    width: 100px;
+}
+
+.curv div {
+    display: inline-block;
+    font-size: 1.5em;
+    height: 150px;
+    width: 80px;
     position: absolute;
-    left: 0;
+    left: 0%;
     top: 0;
-    transform-origin: top left;
-    text-align: center;
-    display: flex;
-    align-items: flex-end;
-  }
+    transform-origin: bottom center;
+    rotate: -20deg;
+
+}

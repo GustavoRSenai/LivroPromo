@@ -7,37 +7,59 @@ let b3 = document.getElementById('b3')
 
 let ativo = 0
 
-function typeWriter(elemento){
-    const textoArray = elemento.innerHTML.split('');
+function typeWriter(elemento) {
+    // Verifica se o texto já está sendo digitado (impede digitação múltipla)
+    if (elemento.classList.contains('digitando')) {
+        return; // Não faz nada se já estiver em andamento
+    }
+
+    // Armazena o texto original no atributo 'data-texto', caso não tenha sido armazenado antes
+    if (!elemento.dataset.texto) {
+        elemento.dataset.texto = elemento.innerHTML;
+    }
+
+    // Limpa o conteúdo atual do elemento
     elemento.innerHTML = '';
-    textoArray.forEach((letra,i) => {
-        setTimeout(() => elemento.innerHTML += letra, 10 * i)
+    elemento.classList.add('digitando'); // Adiciona a classe para indicar que a digitação está em andamento
+
+    // Converte o texto original para um array de caracteres
+    const textoArray = elemento.dataset.texto.split('');
+
+    // Digita o texto letra por letra
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => {
+            elemento.innerHTML += letra;
+            // Se for a última letra, remove a classe 'digitando' para permitir futuras interações
+            if (i === textoArray.length - 1) {
+                elemento.classList.remove('digitando');
+            }
+        }, 25 * i); // Controla o intervalo de digitação (25ms por letra)
     });
-    return;
 }
 
-const paragrafo1 = document.querySelector('.text1')
-const paragrafo2 = document.querySelector('.text2')
-const paragrafo3 = document.querySelector('.text3')
+
+function botão(elemento){
+    let desativar = document.querySelector('.ativo')
+    desativar.classList.remove('ativo')
+    lista[ativo].classList.add('ativo')
+}
 
 b1.onclick = () =>{
-    let desativar = document.querySelector('.ativo')
-    desativar.classList.remove('ativo')
-    lista[0].classList.add('ativo')
-    typeWriter(paragrafo1);
+    ativo = 0
+    botão(b1)
+    typeWriter(lista[ativo])
 }
 b2.onclick = () =>{
-    let desativar = document.querySelector('.ativo')
-    desativar.classList.remove('ativo')
-    lista[1].classList.add('ativo')
-    typeWriter(paragrafo2);
+    ativo = 1
+    botão(b2)
+    typeWriter(lista[ativo])
 }
 b3.onclick = () =>{
-    let desativar = document.querySelector('.ativo')
-    desativar.classList.remove('ativo')
-    lista[2].classList.add('ativo')
-    typeWriter(paragrafo3);
+    ativo = 2
+    botão(b3)
+    typeWriter(lista[ativo])
 }
+
 
 let listalivros = document.querySelectorAll('.livros')
 let contar = listalivros.length
@@ -73,20 +95,48 @@ prev.onclick = () =>{
 
 
 
-let deg = 0;
-for (let i = 1; i <= 30; i++) {
-  let div = document.querySelector(".curvar div:nth-child(" + i + ")");
-  div.style.transform = 'rotate(' + deg + 'deg)';
-  deg = deg + -7;
-}
+let curvados = document.querySelectorAll('.curvar');
 
-for (let i = 1; i <= 30; i++) {
-    let div = document.querySelector(".curva div:nth-child(" + i + ")");
-    div.style.transform = 'rotate(' + deg + 'deg)';
-    deg = deg + -7;
-}
-for (let i = 1; i <= 0; i++) {
-    let div = document.querySelector(".curv div:nth-child(" + i + ")");
-    div.style.transform = 'rotate(' + deg + 'deg)';
-    deg = deg + -7;
-}
+curvados.forEach(function(container) {
+    let letras = container.querySelectorAll('div');
+    let numLetras = letras.length;
+
+    // Grau base calculado: quanto mais letras, menor o grau
+    let grauBase = -40 / numLetras;  // ajustável: quanto maior o numerador, maior a curvatura
+
+    let deg = 0;
+    letras.forEach(function(div) {
+        div.style.transform = 'rotate(' + deg + 'deg)';
+        deg += grauBase;
+    });
+});
+let curvados2 = document.querySelectorAll('.curva');
+
+curvados2.forEach(function(container) {
+    let letras = container.querySelectorAll('div');
+    let numLetras = letras.length;
+
+    // Grau base calculado: quanto mais letras, menor o grau
+    let grauBase = -40 / numLetras;  // ajustável: quanto maior o numerador, maior a curvatura
+
+    let deg = -45;
+    letras.forEach(function(div) {
+        div.style.transform = 'rotate(' + deg + 'deg)';
+        deg += grauBase;
+    });
+});
+let curvados3 = document.querySelectorAll('.curv');
+
+curvados3.forEach(function(container) {
+    let letras = container.querySelectorAll('div');
+    let numLetras = letras.length;
+
+    // Grau base calculado: quanto maior o numerador, maior a curvatura
+    let grauBase = -80 / numLetras;  // Positivo → curvatura para baixo
+
+    let deg = 0;
+    letras.forEach(function(div) {
+        div.style.transform = 'rotate(' + -deg + 'deg)';
+        deg += grauBase;
+    });
+});
